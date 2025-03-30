@@ -1,0 +1,49 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+/* コンテナーのスタイル */
+.container {
+    text-align: center;
+    position: relative;
+}
+
+/* 背景テキストスタイル */
+.background-text {
+    font-size: 100px;
+    color: #8B79690D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* メッセージのスタイル */
+.message {
+    font-size: 20px;
+    color: #8B7969;
+    margin-bottom: 20px;
+}
+
+/* HOMEボタンのスタイル */
+.home-button {
+    background-color: #82756A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.home-button:hover {
+    background-color: #82756A;
+}

@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1ECE7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    width: 1512px;
+    height: 99px;
+    background-color: #FFFFFF;
+    font-size: 25px;
+    color: #8B7969;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 99px;
+    padding: 0 20px;
+}
+
+.header p {
+    font-size: 24p;
+}
+
+header .title {
+    font-size: 2em;
+    color: #8B7969;
+    margin: 0;
+}
+
+header .Register,
+header .Register-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 736px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    border: 1px solid #ddd;
+}
+
+.register-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #8B7969;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+.form-error {
+    color: #ff0000;
+    font-size: 0.875em;
+}
+
+.submit-button {
+    margin-top: 20px;
+    width: 100px;
+    height: 34px;
+    padding: 0;
+    background-color: #D9C6B5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+
+@media (max-width: 600px) {
+    main {
+        width: 90%;
+        height: auto;
+        margin: 20px;
+    }
+
+    header .login-link,
+    header .login-button {
+        right: 10px;
+        top: 10px;
+        padding: 5px 10px;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 10px;
+        
+    }
+}
