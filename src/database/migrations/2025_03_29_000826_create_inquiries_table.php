@@ -39,10 +39,10 @@ class CreateInquiriesTable extends Migration
     public function down()
 {
     Schema::table('inquiries', function (Blueprint $table) {
-        $table->dropForeign(['category_id']); // 外部キーを削除
+        $table->dropForeign(['category_id']); 
     });
 
-    Schema::dropIfExists('inquiries'); // テーブル削除
+    Schema::dropIfExists('inquiries'); 
 }
 
 }

@@ -9,9 +9,9 @@ class IndexController extends Controller
      public function index()
     {
         $categories = Category::all();
-        return view('index', compact('categories'));
+        return view('index',compact('categories'));
     }
-    public function confirmation(ContactRequest $request)
+    public function store(ConfirmRequest $request)
     {
         $data = $request->validated();
         return view('confirm');

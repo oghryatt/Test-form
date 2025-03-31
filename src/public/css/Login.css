@@ -51,16 +51,15 @@ main {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 736px;
     height: auto;
     text-align: center;
     margin: auto;
-    border: 1px solid #ddd;
+    border: 1px solid #E0DFDE;
 }
 
-.register-form h2 {
+.form h2 {
     margin-bottom: 20px;
     font-size: 1.5em;
     color: #8B7969;
@@ -80,7 +79,7 @@ main {
 .form-group input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #E0DFDE;
     border-radius: 5px;
     box-sizing: border-box;
 
@@ -106,23 +105,4 @@ main {
 }
 
 
-@media (max-width: 600px) {
-    main {
-        width: 90%;
-        height: auto;
-        margin: 20px;
-    }
 
-    header .login-link,
-    header .login-button {
-        right: 10px;
-        top: 10px;
-        padding: 5px 10px;
-    }
-
-    .submit-button {
-        width: 100%;
-        padding: 10px;
-        
-    }
-}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FashionablyLate - 登録</title>
+    <title> 登録</title>
     <link rel="stylesheet" href="{{ asset('css/Register.css') }}" />
 </head>
 <body>
@@ -12,8 +12,7 @@
     </header>
 
     <main>
-        <section class="register-form">
-            <form method="POST" action="/register">
+           <form class="form" action="/Register" method="post">
                 @csrf
                 <h2>Register</h2>
                 <div class="form-group">
@@ -42,7 +41,6 @@
 
                 <button type="submit" class="submit-button">登録</button>
             </form>
-        </section>
     </main>
 </body>
 </html>

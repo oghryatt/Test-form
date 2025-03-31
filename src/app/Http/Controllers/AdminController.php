@@ -30,7 +30,7 @@ class AdminController extends Controller
     
         $inquiries = $query->paginate(7);
 
-        return view('admin', compact('inquiries'));
+        return view('index', compact('inquiries'));
     }
 
     

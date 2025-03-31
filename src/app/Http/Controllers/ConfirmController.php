@@ -11,7 +11,7 @@ class ConfirmController extends Controller
     public function index()
 {
     $contacts = Contact::with('category')->latest()->paginate(10); 
-    return view('contacts.index', compact('contacts'));
+    return view('contact.index', compact('contacts'));
 }
 
     
@@ -20,26 +20,24 @@ class ConfirmController extends Controller
     public function create()
     {
         $categories = Category::all();
-        return view('contacts.create', compact('categories'));
     }
 
-    public function confirm(ContactRequest $request)
+    public function confirm(ConfirmRequest $request)
     {
         $validated = $request->validated();
         return view('contacts.confirm', compact('validated'));
         
     }
 
-    public function store(ContactRequest $request)
+    public function store(ConfirmRequest $request)
     {
-        Contact::create($request->validated());
-        return redirect()->route('contacts.create')->with('message', 'お問い合わせが送信されました');
+        
     }
 
 
  public function thanks()
     {
-        return view('contacts.thanks');
+        return view('contact.thanks');
     }
 
 

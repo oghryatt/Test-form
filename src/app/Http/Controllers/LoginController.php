@@ -2,24 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\LoginUserRequest;
+use App\Http\Requests\LoginRequest;
 use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
-    public function create()
+    public function create(LoginRequest $request)
     {
         return view('login');
     }
 
-    public function store(LoginUserRequest $request)
+    public function store(LoginRequest $request)
     {
-        if (Auth::attempt($request->only('email', 'password'))) {
-            return redirect('/Admin');
+        $contact=$request->only(['email', 'password']); {
+            return compact('/Admin');
         }
 
-        return back()->withErrors([
-            'email' => 'メールアドレスまたはパスワードが正しくありません。',
-        ]);
     }
 }

@@ -16,7 +16,7 @@
     <main>
         <h1>Admin</h1>
         
-        <form method="GET" action="/search">
+        <form class="form" action="/admin" method="post">
             @csrf
             <input type="text" name="name" placeholder="名前" value="{{ request('name') }}">
             <input type="text" name="email" placeholder="メールアドレス" value="{{ request('email') }}">
@@ -25,11 +25,11 @@
                 <option value="male" {{ request('gender') == 'male' ? 'selected' : '' }}>男性</option>
                 <option value="female" {{ request('gender') == 'female' ? 'selected' : '' }}>女性</option>
                 <option value="other" {{ request('gender') == 'other' ? 'selected' : '' }}>その他</option>
-            </select>
+           
             <input type="text" name="type" placeholder="お問い合わせ種類" value="{{ request('type') }}">
             <input type="date" name="date" value="{{ request('date') }}">
             <button type="submit">検索</button>
-            <button type="reset" onclick="window.location.href='/search';">リセット</button>
+            <button type="reset" href='/search';>リセット</button>
         </form>
 
         <table>
@@ -50,11 +50,7 @@
                         <td>{{ $inquiry->email }}</td>
                         <td>{{ $inquiry->created_at }}</td>
                         <td>
-                            <button onclick="showDetails({{ json_encode($inquiry) }})">詳細</button>
-                            <form method="POST" action="/search/{{ $inquiry->id }}" onsubmit="return confirm('削除してもよろしいですか？');" style="display:inline;">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit">削除</button>
+                            
                             </form>
                         </td>
                     </tr>

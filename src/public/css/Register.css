@@ -29,33 +29,21 @@ header {
 
 header .title {
     font-size: 2em;
-    /* フォントサイズを2emに設定 */
     color: #8B7969;
-    /* テキスト色を白に設定 */
     margin: 0;
-    /* マージンを削除 */
 }
 
 header .login-link,
 header .login-button {
     position: absolute;
-    /* 絶対位置を使用 */
     right: 20px;
-    /* 右から20pxの位置に配置 */
     top: 20px;
-    /* 上から20pxの位置に配置 */
     background-color: #fff;
-    /* 背景色を白に設定 */
     border: 1px solid #ccc;
-    /* 境界線を薄い灰色に設定 */
     padding: 10px 20px;
-    /* 上下に10px、左右に20pxのパディングを追加 */
     border-radius: 5px;
-    /* 角を5pxの半径で丸める */
     cursor: pointer;
-    /* カーソルをポインターに設定 */
     text-decoration: none;
-    /* テキスト装飾を削除 */
     color: #333;
 }
 
@@ -63,63 +51,43 @@ main {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;
-    /* 幅を90%に設定 */
     max-width: 736px;
-    /* 最大幅を736pxに設定 */
     height: auto;
-    /* 高さを自動に設定 */
     text-align: center;
     margin: auto;
-    /* 水平・垂直に中央揃えに */
-    border: 1px solid #ddd;
-    /* 境界線を追加 */
+    border: 1px solid #E0DFDE;
+   
 }
 
-.register-form h2 {
+.form h2 {
     margin-bottom: 20px;
-    /* 下に20pxのマージンを追加 */
     font-size: 1.5em;
-    /* フォントサイズを1.5emに設定 */
     color: #8B7969;
-    /* テキスト色を濃い灰色に設定 */
 }
 
 .form-group {
     margin-bottom: 15px;
-    /* 下に15pxのマージンを追加 */
     text-align: left;
-    /* テキストを左揃えに */
 }
 
 .form-group label {
     display: block;
-    /* ブロック要素として表示 */
     margin-bottom: 5px;
-    /* 下に5pxのマージンを追加 */
     font-weight: bold;
-    /* フォントを太字に設定 */
 }
 
 .form-group input {
     width: 100%;
-    /* 幅を100%に設定 */
     padding: 10px;
-    /* 上下左右に10pxのパディングを追加 */
     border: 1px solid #ddd;
-    /* 境界線を薄い灰色に設定 */
     border-radius: 5px;
-    /* 角を5pxの半径で丸める */
     box-sizing: border-box;
-    /* ボックスサイズをボーダーボックスに設定 */
 }
 
 .form-error {
     color: #ff0000;
-    /* エラーメッセージの色を赤に設定 */
     font-size: 0.875em;
-    /* フォントサイズを小さく設定 */
 }
 
 .submit-button {
@@ -134,34 +102,7 @@ main {
     cursor: pointer;
     box-sizing: border-box;
     font-size: 12px;
-    /* 必要ならさらに調整 */
+    
 }
 
-/* レスポンシブデザイン */
-@media (max-width: 600px) {
-    main {
-        width: 90%;
-        /* 幅を90%に設定 */
-        height: auto;
-        /* 高さを自動に設定 */
-        margin: 20px;
-        /* マージンを追加 */
-    }
 
-    header .login-link,
-    header .login-button {
-        right: 10px;
-        /* 右から10pxの位置に配置 */
-        top: 10px;
-        /* 上から10pxの位置に配置 */
-        padding: 5px 10px;
-        /* 上下に5px、左右に10pxのパディングを追加 */
-    }
-
-    .submit-button {
-        width: 100%;
-        /* 幅を100%に設定 */
-        padding: 10px;
-        /* パディングを10pxに設定 */
-    }
-}

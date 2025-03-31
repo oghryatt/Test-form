@@ -21,29 +21,29 @@
                 <span class="detail-label">性別:</span>
                 <span class="detail-value">{{ $data['gender'] == 'male' ? '男性' : '女性' }}</span>
             </div>
-            <div class="detail-item">
-                <span class="detail-label">メールアドレス:</span>
-                <span class="detail-value">{{ $data['email'] }}</span>
+            <div class="item">
+                <span class="label">メールアドレス:</span>
+                <span class="value">{{ $data['email'] }}</span>
             </div>
-            <div class="detail-item">
-                <span class="detail-label">電話番号:</span>
-                <span class="detail-value">{{ $data['phone'] }}</span>
+            <div class="item">
+                <span class="label">電話番号:</span>
+                <span class="value">{{ $data['phone'] }}</span>
             </div>
-            <div class="detail-item">
-                <span class="detail-label">住所:</span>
-                <span class="detail-value">{{ $data['address'] }}</span>
+            <div class="item">
+                <span class="label">住所:</span>
+                <span class="detavalue">{{ $data['address'] }}</span>
             </div>
-            <div class="detail-item">
-                <span class="detail-label">建物名:</span>
-                <span class="detail-value">{{ $data['building'] }}</span>
+            <div class="item">
+                <span class="label">建物名:</span>
+                <span class="value">{{ $data['building'] }}</span>
             </div>
-            <div class="detail-item">
-                <span class="detail-label">お問い合わせの種類:</span>
-                <span class="detail-value">{{ $data['category_name'] }}</span>
+            <div class="item">
+                <span class="label">お問い合わせの種類:</span>
+                <span class="value">{{ $data['category_name'] }}</span>
             </div>
-            <div class="detail-item">
-                <span class="detail-label">お問い合わせ内容:</span>
-                <span class="detail-value">{{ $data['content'] }}</span>
+            <div class="item">
+                <span class="label">お問い合わせ内容:</span>
+                <span class="value">{{ $data['content'] }}</span>
             </div>
             <button class="-button" >送信</button>
             <span class="button">

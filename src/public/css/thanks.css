@@ -1,4 +1,3 @@
-/* 全体のスタイル */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -9,13 +8,11 @@ body {
     background-color: #ffffff;
 }
 
-/* コンテナーのスタイル */
 .container {
     text-align: center;
     position: relative;
 }
 
-/* 背景テキストスタイル */
 .background-text {
     font-size: 100px;
     color: #8B79690D;
@@ -26,14 +23,12 @@ body {
     z-index: -1;
 }
 
-/* メッセージのスタイル */
 .message {
     font-size: 20px;
     color: #8B7969;
     margin-bottom: 20px;
 }
 
-/* HOMEボタンのスタイル */
 .home-button {
     background-color: #82756A;
     color: #fff;
@@ -44,6 +39,3 @@ body {
     border-radius: 5px;
 }
 
-.home-button:hover {
-    background-color: #82756A;
-}

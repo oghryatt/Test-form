@@ -13,7 +13,7 @@
 
     </header>
     <main>
-        <form method="POST" action="/login">
+        <form class="form" action="/login" method="post">
             @csrf
             <h2>Login</h2>
             <div>
